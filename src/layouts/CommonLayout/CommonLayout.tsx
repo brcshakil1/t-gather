@@ -1,9 +1,24 @@
+import SideBar from "@/components/shared/SideBar";
+import { Outlet } from "react-router-dom";
+
 const CommonLayout = () => {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-center my-10">
-        This is common-layout
-      </h1>
+    <div className="container mx-auto">
+      <div className="grid grid-cols-12 ">
+        <div className="hidden md:block lg:col-span-2 md:col-span-3 border-r-2 pr-5 py-10 relative h-screen ">
+          <div className="sticky top-0  w-full h-full">
+            <SideBar />
+          </div>
+        </div>
+
+        <div className="lg:col-span-7 md:col-span-9 col-span-12  mt-10 px-5">
+          <Outlet />
+        </div>
+
+        <div className="col-span-3 hidden lg:block border-l-2">
+          <h2 className="text-xl font-bold">Secondary side bar</h2>
+        </div>
+      </div>
     </div>
   );
 };

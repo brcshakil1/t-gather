@@ -1,7 +1,9 @@
+import Post from "./Post/Post";
+
 const Home = () => {
   return (
     <div>
-      <h2>This is home pages</h2>
+      <Post />
     </div>
   );
 };
