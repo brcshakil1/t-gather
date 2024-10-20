@@ -3,6 +3,7 @@ import CommonLayout from "./../layouts/CommonLayout/CommonLayout";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Home from "@/pages/Home/Home";
+import Profile from "@/pages/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
       },
     ],
   },

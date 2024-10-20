@@ -46,7 +46,10 @@ const SideBar = () => {
           </div>
         </Link>
 
-        <Link to="/" className=" py-3 px-5 rounded-lg hover:bg-slate-950">
+        <Link
+          to="/profile"
+          className=" py-3 px-5 rounded-lg hover:bg-slate-950"
+        >
           <div className={linkStyle}>
             <PersonStanding size={32} />
             <span>Profile</span>

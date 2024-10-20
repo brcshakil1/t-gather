@@ -1,9 +1,13 @@
-import Post from "./Post/Post";
+import CreatePost from "./CreatePost/CreatePost";
+import Posts from "@/components/shared/Posts/Posts";
 
 const Home = () => {
   return (
     <div>
-      <Post />
+      <CreatePost />
+      <div>
+        <Posts />
+      </div>
     </div>
   );
 };

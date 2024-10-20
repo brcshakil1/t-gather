@@ -5,8 +5,8 @@ const CommonLayout = () => {
   return (
     <div className="container mx-auto">
       <div className="grid grid-cols-12 ">
-        <div className="hidden md:block lg:col-span-2 md:col-span-3 border-r-2 pr-5 py-10 relative h-screen ">
-          <div className="sticky top-0  w-full h-full">
+        <div className="hidden md:block lg:col-span-2 md:col-span-3  pr-5  relative h-screen ">
+          <div className="fixed top-0  h-full border-r pr-12 py-10">
             <SideBar />
           </div>
         </div>
